@@ -2,8 +2,8 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import LogoLight from 'assets/images/logo.png';
-import LogoDark from 'assets/images/logo-dark.png';
+import LogoLight from 'assets/images/logo_nova.png';
+import LogoDark from 'assets/images/logo_nova.png';
 import { useAccountLayout } from './hooks';
 
 type AccountLayoutProps = {
@@ -22,15 +22,15 @@ const AccountLayout2 = ({ bottomLinks, children }: AccountLayoutProps) => {
                 <div className="align-items-center d-flex h-100">
                     <Card.Body>
                         {/* logo */}
-                        <div className="auth-brand text-center text-lg-start">
+                        <div className="auth-brand text-center text-lg-start mb-4">
                             <Link to="/" className="logo-dark">
                                 <span>
-                                    <img src={LogoDark} alt="" height="18" />
+                                    <img src={LogoDark} alt="" height="40" />
                                 </span>
                             </Link>
                             <Link to="/" className="logo-light">
                                 <span>
-                                    <img src={LogoLight} alt="" height="18" />
+                                    <img src={LogoLight} alt="" height="40" />
                                 </span>
                             </Link>
                         </div>

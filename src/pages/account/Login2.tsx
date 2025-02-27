@@ -18,7 +18,7 @@ const BottomLink = () => {
             <p className="text-muted">
                 {t("Don't have an account?")}{' '}
                 <Link to={'/account/register2'} className="text-muted ms-1">
-                    <b>{t('Sign Up')}</b>
+                    <b>{t('INTRANET')}</b>
                 </Link>
             </p>
         </footer>
@@ -34,7 +34,7 @@ const Login2 = () => {
             {(userLoggedIn || user) && <Navigate to={redirectUrl} replace />}
 
             <AccountLayout2 bottomLinks={<BottomLink />}>
-                <h4 className="mt-0">{t('Sign In')}</h4>
+                <h4 className="mt-0">{t('INTRANET')}</h4>
                 <p className="text-muted mb-4">{t('Enter your email address and password to access account.')}</p>
 
                 {error && (
@@ -49,17 +49,17 @@ const Login2 = () => {
                     defaultValues={{ username: 'test', password: 'test' }}
                 >
                     <FormInput
-                        label={t('Username')}
+                        label={t('Usuário')}
                         type="text"
                         name="username"
-                        placeholder={t('Enter your Username')}
+                        placeholder={t('Entre com seu Usuário')}
                         containerClass={'mb-3'}
                     />
                     <FormInput
-                        label={t('Password')}
+                        label={t('Senha')}
                         type="password"
                         name="password"
-                        placeholder={t('Enter your password')}
+                        placeholder={t('Entre com sua Senha')}
                         containerClass={'mb-3'}
                     >
                         <Link to="/account/forget-password2" className="text-muted float-end">

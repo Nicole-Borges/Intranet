@@ -8,6 +8,13 @@ import { useRedux } from 'hooks';
 
 // lazy load all the views
 
+//home 
+const Home = React.lazy(() => import('pages/account/Home'));
+
+//Cadastro
+const Cadastro = React.lazy(() => import('pages/account/Cadastro'));
+
+
 // auth
 const Login = React.lazy(() => import('pages/account/Login'));
 const Logout = React.lazy(() => import('pages/account/Logout'));
@@ -195,6 +202,7 @@ const AllRoutes = () => {
                 {
                     path: 'account',
                     children: [
+                        { path: 'cadastro', element: <LoadComponent component={Cadastro} /> },
                         { path: 'login', element: <LoadComponent component={Login} /> },
                         { path: 'register', element: <LoadComponent component={Register} /> },
                         { path: 'confirm', element: <LoadComponent component={Confirm} /> },
@@ -207,6 +215,7 @@ const AllRoutes = () => {
                         { path: 'forget-password2', element: <LoadComponent component={ForgetPassword2} /> },
                         { path: 'lock-screen2', element: <LoadComponent component={LockScreen2} /> },
                         { path: 'logout2', element: <LoadComponent component={Logout2} /> },
+                        { path: 'home', element: <LoadComponent component={Home} />},
                     ],
                 },
                 {
@@ -251,6 +260,7 @@ const AllRoutes = () => {
                             path: 'e-wallet',
                             element: <LoadComponent component={EWalletDashboard} />,
                         },
+                        
                     ],
                 },
                 {

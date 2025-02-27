@@ -3,7 +3,7 @@ import { AllRoutes } from './index';
 
 const Routes = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/intranet">
             <AllRoutes />
         </BrowserRouter>
     );

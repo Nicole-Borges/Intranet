@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhyper_react_ts=self.webpackChunkhyper_react_ts||[]).push([[2215],{72215:function(e,t,a){a.r(t);var r=a(55615),s=a(80184);t.default=function(){return(0,s.jsx)(r.V1,{breadCrumbItems:[{label:"Pages",path:"/pages/starter"},{label:"Starter",path:"/pages/starter",active:!0}],title:"Starter"})}}}]);
+//# sourceMappingURL=2215.ab597d67.chunk.js.map
